@@ -9,4 +9,4 @@
 2. Create a Vue instance and pass in a configuration object.
 3. Configure the object properties `el` to specify the presentation container.
 4. The configuration object property `data` specifies the contents of the presentation container.
-5. <font color='red'>Instances and containers can only be one-to-one.</font>
+5. **_Instances and containers can only be one-to-one._**
