@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 引入 Vue.js -->
+    <script src="../Js/vue.js" type="text/javascript" charset="utf-8"></script>
+    <title>Vue2 Course 5</title>
+</head>
+<body>
+<!-- 准备一个容器 -->
+<div id="root">
+    <h1>数据代理</h1>
+    {{message}}
+</div>
+
+<script>
+    Vue.config.productionTip = false; //阻止非生成环境的提示
+
+    let person = {
+        name: 'John',
+        sex: 'Male',
+    };
+
+    let age = 21;
+
+    Object.defineProperty(person, 'age', {
+        // value: 20,
+        enumerable: true, // 控制属性是否可以枚举
+        // writable: true, // 控制属性是否可修改
+        configurable: true, // 控制属性是否可被删除
+
+        // 当读取 person 的 age 属性时，get 函数（getter）就会被调用，且返回值就是 age 的值
+        get: function () {
+            return age;
+        }
+    })
+
+    <!-- 创建 Vue 实例 -->
+    const vue = new Vue({
+        data: function () {
+            return {
+                message: person
+            };
+        }
+    });
+
+    vue.$mount('#root');
+</script>
+</body>
+</html>

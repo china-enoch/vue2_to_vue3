@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 引入 Vue.js -->
+    <script src="../Js/vue.js" type="text/javascript" charset="utf-8"></script>
+    <title>Vue2 Course 4</title>
+</head>
+<body>
+<!-- 准备一个容器 -->
+<div id="root">
+    <h1>el 与 data 的两种写法</h1>
+    双项数据绑定：<input type="text" v-model="message"/>
+</div>
+
+<script>
+    Vue.config.productionTip = false; //阻止非生成环境的提示
+    <!-- 创建 Vue 实例 -->
+    const vue = new Vue({
+        //el: '#root', // el 用于指定当前 Vue 实例为哪个容器服务，值通常为 CSS 选择器字符串
+
+        /**
+         * data 第一种写法：对象式
+         *
+         * data: { // 用于存储数据，供 el 所指定的实例容器所使用
+         *             message: 'Vue',
+         *         }
+         */
+
+        // data 第二种写法：函数式
+        data:function () {
+            console.log(this);// 此处的 this 为 Vue 实例
+            return {
+                message: 'Vue'
+            };
+        }
+    });
+
+    vue.$mount('#root');
+</script>
+</body>
+</html>

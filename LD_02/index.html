@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <!-- 引入 Vue.js -->
     <script src="../Js/vue.js" type="text/javascript" charset="utf-8"></script>
-    <title>Vue2 Course 1</title>
+    <title>Vue2 Course 2</title>
 </head>
 <body>
 <!-- 准备一个容器 -->
 <div id="root">
-    <h1>初始 Vue</h1>
-    <h2>Hello, {{message}}</h2>
+    <h1>模板语法</h1>
+    <h2>插值语法，用于解析具体内容的变量</h2>
+    <h3>Hello, {{message}}</h3>
+    <hr/>
+    <h2>指令语法, 用于解析标签的变量</h2>
+    <a :href="url" target="_blank">点击跳转百度1</a>
+    <br/>
+    <a v-bind:href="url" target="_blank">点击跳转百度2</a>
 </div>
 
 <script>
@@ -19,7 +25,8 @@
     const vue = new Vue({
         el: '#root', // el 用于指定当前 Vue 实例为哪个容器服务，值通常为 CSS 选择器字符串
         data: { // 用于存储数据，供 el 所指定的实例容器所使用
-            message: 'Vue'
+            message: 'Vue',
+            url: 'http://www.baidu.com'
         }
     });
 </script>

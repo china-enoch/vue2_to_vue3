@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <!-- 引入 Vue.js -->
     <script src="../Js/vue.js" type="text/javascript" charset="utf-8"></script>
-    <title>Vue2 Course 1</title>
+    <title>Vue2 Course 3</title>
 </head>
 <body>
 <!-- 准备一个容器 -->
 <div id="root">
-    <h1>初始 Vue</h1>
-    <h2>Hello, {{message}}</h2>
+    <h1>数据绑定</h1>
+    <!-- 本身写法 -->
+    单项数据绑定：<input type="text" v-bind:value="message"/>
+    <br/>
+    双项数据绑定：<input type="text" v-model:value="message"/>
+    <br/>
+    <br/>
+    <!-- 简写 -->
+    单项数据绑定：<input type="text" :value="message"/>
+    <br/>
+    双项数据绑定：<input type="text" v-model="message"/>
 </div>
 
 <script>
@@ -19,7 +28,7 @@
     const vue = new Vue({
         el: '#root', // el 用于指定当前 Vue 实例为哪个容器服务，值通常为 CSS 选择器字符串
         data: { // 用于存储数据，供 el 所指定的实例容器所使用
-            message: 'Vue'
+            message: 'Vue',
         }
     });
 </script>
