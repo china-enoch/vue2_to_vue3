@@ -8,5 +8,6 @@
 ```
    1. Include Vue.js in your project.
    2. Create a Vue instance and pass in a configuration object.
-   3. 
+   3. Configure the object properties el to specify the presentation container.
+   4. The configuration object property data specifies the contents of the presentation container.
 ```
