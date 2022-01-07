@@ -2,7 +2,7 @@
 
 ### Vue2
 > [Course 1 : Create Vue](LD_01/index.html)
-
+> 
 > **Summary**
 > 
 > 1. Include Vue.js in your project.
@@ -13,7 +13,7 @@
 ---
 
 > [Course 2 : Template syntax](LD_02/index.html)
-
+> 
 > **Summary**
 > 
 > 1. Interpolation syntax.
@@ -21,7 +21,7 @@
 ---
 
 > [Course 3 : Data binding](LD_03/index.html)
-
+> 
 > **Summary**
 > 
 > 1. Unidirectional binding.
@@ -29,7 +29,7 @@
 ---
 
 > [Course 4 : Two ways of writing `el` and `data`](LD_04/index.html)
-
+> 
 > **Summary**
 > 
 > Nothing
@@ -46,14 +46,14 @@
 ---
 
 >[Course 6 : Event processing](LD_06/index.html)
-
+> 
 > **Summary**
 > 
 > 1. `@click` = `v-on:click`
 ---
 
 >[Course 7 : Event modifier](LD_07/index.html)
-
+> 
 > **Summary**
 > 
 > 1. `preventDefault()` or `prevent` : Block default events.
@@ -65,7 +65,7 @@
 ---
 
 >[Course 8 : Keyboard events](LD_08/index.html)
-
+> 
 > **Summary**
 > 
 > 1. `enter`
@@ -80,7 +80,7 @@
 ---
 
 >[Course 9 : Compute attributes](LD_09/index.html)
-
+> 
 > **Summary**
 >
 > 1. [Interpolation syntax](LD_09/index.html)
