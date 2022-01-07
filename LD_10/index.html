@@ -35,10 +35,26 @@
                 console.log(this.isHot);
                 return this.isHot ? '炎热' : '凉爽'
             },
-        }
+        },
+        // watch: {
+        //     isHot: {
+        //         // 被监听者发生改变时
+        //         handler(newValue, oldValue) {
+        //             console.log(oldValue + ' isHot 更改了 ' + newValue);
+        //         },
+        //         immediate: true, //初始化时让 handler 调用一次
+        //     }
+        // }
     });
 
     vue.$mount('#root');
+    vue.$watch('isHot', {
+        // 被监听者发生改变时
+        handler(newValue, oldValue) {
+            console.log(oldValue + ' isHot 更改了 ' + newValue);
+        },
+        immediate: true, //初始化时让 handler 调用一次
+    })
 </script>
 </body>
 </html>

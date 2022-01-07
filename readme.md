@@ -92,5 +92,5 @@
 >
 > **Summary**
 >
-> Nothing
+> All properties that exist in the VM can listen
 ---
