@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 引入 Vue.js -->
+    <script src="../Js/vue.js" type="text/javascript" charset="utf-8"></script>
+    <title>Vue2 Course 11</title>
+</head>
+<body>
+
+<!-- 准备一个容器 -->
+<div id="root">
+    <h1>深度监视</h1>
+    <h3>a 的值是{{member.a}}</h3>
+    <button @click="member.a++">点击 a++</button>
+    <h3>b 的值是{{member.b}}</h3>
+    <button @click="member.b++">点击 b++</button>
+</div>
+
+<script>
+    Vue.config.productionTip = false; //阻止非生成环境的提示
+
+    <!-- 创建 Vue 实例 -->
+    const vue = new Vue({
+        data: {
+            isHot: true,
+            member: {
+                a: 1,
+                b: 1
+            }
+        },
+        watch: {
+            isHot: {
+                // 被监听者发生改变时
+                handler(newValue, oldValue) {
+                    console.log(oldValue + ' isHot 更改了 ' + newValue);
+                },
+                immediate: true, //初始化时让 handler 调用一次
+            },
+            'member.a': {
+                handler(newValue, oldValue) {
+                    console.log('已监听到 a 的变化');
+                }
+            },
+            member:{
+                deep:true,//开启深度监听
+                handler(newValue, oldValue) {
+                    console.log('已监听到 member 的变化');
+                }
+            }
+        }
+    });
+
+    vue.$mount('#root');
+</script>
+</body>
+</html>

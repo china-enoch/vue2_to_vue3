@@ -94,3 +94,10 @@
 >
 > All properties that exist in the VM can listen
 ---
+
+>[Course 11 : Deep monitor](LD_11/index.html)
+>
+> **Summary**
+>
+> Listen multi-storey attributes.
+---
