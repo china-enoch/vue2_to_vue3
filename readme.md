@@ -19,6 +19,7 @@
 1. Interpolation syntax.
 2. Instructions syntax.
 ---
+
 > [Course 3 : Data binding](LD_03/index.html)
 
 **Summary**
@@ -26,6 +27,7 @@
 1. Unidirectional binding.
 2. Bidirectional binding.
 ---
+
 > [Course 4 : Two ways of writing `el` and `data`](LD_04/index.html)
 
 **Summary**
@@ -33,6 +35,7 @@
 Nothing
 
 ---
+
 > [Course 5 : Data proxy](LD_05/index.html)
 
 **Summary**
@@ -40,5 +43,11 @@ Nothing
 1. Add all attributes in the `data` object to the VM through `Object.defineProperty()`.
 2. Specify a `getter/setter` for each property added to the VM.
 3. Operate (`read/write`) the data in `data` in getter / setter
+---
 
+>[Course 6 : Event processing](LD_06/index.html)
+
+> **Summary**
+
+1. `@click` = `v-on:click`
 ---

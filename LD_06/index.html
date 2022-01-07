@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 引入 Vue.js -->
+    <script src="../Js/vue.js" type="text/javascript" charset="utf-8"></script>
+    <title>Vue2 Course 6</title>
+</head>
+<body>
+<!-- 准备一个容器 -->
+<div id="root">
+    <h1>事件处理</h1>
+    <button v-on:click="showInfo"> 点击提示</button><br/><br/>
+    <button @click="showInfo"> 点击提示简写</button><br/><br/>
+    <button @click="showInfo1({name: 'John'}, $event)"> 点击提示(参数)</button>
+</div>
+
+<script>
+    Vue.config.productionTip = false; //阻止非生成环境的提示
+
+    <!-- 创建 Vue 实例 -->
+    const vue = new Vue({
+        methods: {
+            showInfo(event) {
+                console.log(event.target);
+                console.log(this); // 此处的 this 为 vm
+
+                alert('Hello Vue!');
+            },
+            showInfo1(data, event) {
+                console.log(event.target.innerHTML);
+                alert(data.name);
+            }
+        }
+    });
+
+    vue.$mount('#root');
+</script>
+</body>
+</html>
