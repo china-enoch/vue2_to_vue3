@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 引入 Vue.js -->
+    <script src="../Js/vue.js" type="text/javascript" charset="utf-8"></script>
+    <title>Vue2 Course 6</title>
+</head>
+<body>
+
+<!-- 准备一个容器 -->
+<div id="root">
+    <h1>事件修饰符</h1>
+    <!-- prevent -->
+    <a href="www.baidu.com" @click.prevent="showInfo">点击跳转</a>
+
+    <!-- stop -->
+    <br/><br/>
+    <div @click.stop="showInfo">
+        <button @click.stop="showInfo">点击提示</button>
+    </div>
+
+    <!-- once -->
+    <br/><br/>
+    <button @click.once="showInfo">点击提示</button>
+
+    <!-- capture -->
+    <br/><br/>
+    <div @click.capture="showInfo1('div1')">
+        div1
+        <div @click="showInfo1('div2')">
+            div2
+        </div>
+    </div>
+
+    <!-- self -->
+    <br/><br/>
+    <div @click.self="showInfo">
+        <button @click="showInfo">点击提示</button>
+    </div>
+
+
+</div>
+
+<script>
+    Vue.config.productionTip = false; //阻止非生成环境的提示
+
+    <!-- 创建 Vue 实例 -->
+    const vue = new Vue({
+        methods: {
+            showInfo(e) {
+                // e.preventDefault(); 也可以阻止默认行为
+                // e.stopPropagation();
+                alert('Hello Vue!');
+            },
+            showInfo1(msg, e) {
+                console.log(msg);
+                alert('Hello Vue!');
+            },
+        }
+    });
+
+    vue.$mount('#root');
+</script>
+</body>
+</html>

@@ -51,3 +51,15 @@ Nothing
 
 1. `@click` = `v-on:click`
 ---
+
+>[Course 7 : Event modifier](LD_07/index.html)
+
+> **Summary**
+
+1. `preventDefault()` or `prevent` : Block default events.
+2. `stop`: Prevent event bubbling.
+3. `once`: Trigger only once.
+4. `capture`: Capture mode using events.
+5. `self`: The event is triggered only if `event.target` is the element of the current operation.
+6. `passive`: The default behavior of the event is executed immediately without waiting for the event callback to complete.
+---
