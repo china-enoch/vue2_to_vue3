@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <!-- 引入 Vue.js -->
     <script src="../Js/vue.js" type="text/javascript" charset="utf-8"></script>
-    <title>Vue2 Course 6</title>
+    <title>Vue2 Course 7</title>
 </head>
 <body>
 
@@ -17,7 +17,7 @@
     <!-- stop -->
     <br/><br/>
     <div @click.stop="showInfo">
-        <button @click.stop="showInfo">点击提示</button>
+        <a href="www.baidu.com" @click.stop.prevent="showInfo">点击提示</a>
     </div>
 
     <!-- once -->

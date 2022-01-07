@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 引入 Vue.js -->
+    <script src="../Js/vue.js" type="text/javascript" charset="utf-8"></script>
+    <title>Vue2 Course 8</title>
+</head>
+<body>
+
+<!-- 准备一个容器 -->
+<div id="root">
+    <h1>键盘事件</h1>
+    <input type="text" placeholder="按下回车提示输入" @keyup.ctrl.y="input">
+</div>
+
+<script>
+    Vue.config.productionTip = false; //阻止非生成环境的提示
+
+    Vue.config.keyCodes.huiche = 13; //自定义键盘事件别名
+
+    <!-- 创建 Vue 实例 -->
+    const vue = new Vue({
+        methods: {
+            input(e) {
+                console.log(e.key + '-' + e.keyCode);
+                // if (e.keyCode === 13) {
+                //     console.log(e.target.value);
+                // }
+            },
+        }
+    });
+
+    vue.$mount('#root');
+</script>
+</body>
+</html>

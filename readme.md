@@ -63,3 +63,18 @@ Nothing
 5. `self`: The event is triggered only if `event.target` is the element of the current operation.
 6. `passive`: The default behavior of the event is executed immediately without waiting for the event callback to complete.
 ---
+
+>[Course 8 : Keyboard events](LD_08/index.html)
+
+> **Summary**
+
+1. `enter`
+2. `delete`
+3. `esc`
+4. `space`
+5. `tab`
+6. `up`
+7. `down`
+8. `left`
+9. `right`
+---
