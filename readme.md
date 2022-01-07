@@ -37,6 +37,8 @@ Nothing
 
 **Summary**
 
-To be continued
+1. Add all attributes in the `data` object to the VM through `Object.defineProperty()`.
+2. Specify a `getter/setter` for each property added to the VM.
+3. Operate (`read/write`) the data in `data` in getter / setter
 
 ---
