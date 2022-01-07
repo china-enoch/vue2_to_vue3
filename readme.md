@@ -3,87 +3,87 @@
 ### Vue2
 > [Course 1 : Create Vue](LD_01/index.html)
 
-**Summary**
-
-1. Include Vue.js in your project.
-2. Create a Vue instance and pass in a configuration object.
-3. Configure the object properties `el` to specify the presentation container.
-4. The configuration object property `data` specifies the contents of the presentation container.
-5. **_Instances and containers can only be one-to-one._**
+> **Summary**
+> 
+> 1. Include Vue.js in your project.
+> 2. Create a Vue instance and pass in a configuration object.
+> 3. Configure the object properties `el` to specify the presentation container.
+> 4. The configuration object property `data` specifies the contents of the presentation container.
+> 5. **_Instances and containers can only be one-to-one._**
 ---
 
 > [Course 2 : Template syntax](LD_02/index.html)
 
-**Summary**
-
-1. Interpolation syntax.
-2. Instructions syntax.
+> **Summary**
+> 
+> 1. Interpolation syntax.
+> 2. Instructions syntax.
 ---
 
 > [Course 3 : Data binding](LD_03/index.html)
 
-**Summary**
-
-1. Unidirectional binding.
-2. Bidirectional binding.
+> **Summary**
+> 
+> 1. Unidirectional binding.
+> 2. Bidirectional binding.
 ---
 
 > [Course 4 : Two ways of writing `el` and `data`](LD_04/index.html)
 
-**Summary**
-
-Nothing
+> **Summary**
+> 
+> Nothing
 
 ---
 
 > [Course 5 : Data proxy](LD_05/index.html)
-
-**Summary**
-
-1. Add all attributes in the `data` object to the VM through `Object.defineProperty()`.
-2. Specify a `getter/setter` for each property added to the VM.
-3. Operate (`read/write`) the data in `data` in getter / setter
+> 
+> **Summary**
+> 
+> 1. Add all attributes in the `data` object to the VM through `Object.defineProperty()`.
+> 2. Specify a `getter/setter` for each property added to the VM.
+> 3. Operate (`read/write`) the data in `data` in getter / setter
 ---
 
 >[Course 6 : Event processing](LD_06/index.html)
 
 > **Summary**
-
-1. `@click` = `v-on:click`
+> 
+> 1. `@click` = `v-on:click`
 ---
 
 >[Course 7 : Event modifier](LD_07/index.html)
 
 > **Summary**
-
-1. `preventDefault()` or `prevent` : Block default events.
-2. `stop`: Prevent event bubbling.
-3. `once`: Trigger only once.
-4. `capture`: Capture mode using events.
-5. `self`: The event is triggered only if `event.target` is the element of the current operation.
-6. `passive`: The default behavior of the event is executed immediately without waiting for the event callback to complete.
+> 
+> 1. `preventDefault()` or `prevent` : Block default events.
+> 2. `stop`: Prevent event bubbling.
+> 3. `once`: Trigger only once.
+> 4. `capture`: Capture mode using events.
+> 5. `self`: The event is triggered only if `event.target` is the element of the current operation.
+> 6. `passive`: The default behavior of the event is executed immediately without waiting for the event callback to complete.
 ---
 
 >[Course 8 : Keyboard events](LD_08/index.html)
 
 > **Summary**
-
-1. `enter`
-2. `delete`
-3. `esc`
-4. `space`
-5. `tab`
-6. `up`
-7. `down`
-8. `left`
-9. `right`
+> 
+> 1. `enter`
+> 2. `delete`
+> 3. `esc`
+> 4. `space`
+> 5. `tab`
+> 6. `up`
+> 7. `down`
+> 8. `left`
+> 9. `right`
 ---
 
->[Course 8 : Compute attributes](LD_09/index.html)
+>[Course 9 : Compute attributes](LD_09/index.html)
 
 > **Summary**
-
-1. [Interpolation syntax](LD_09/index.html)
-2. [Methods](LD_09/methods.html) NoCache
-3. [Compute](LD_09/compute.html) Cache
+>
+> 1. [Interpolation syntax](LD_09/index.html)
+> 2. [Methods](LD_09/methods.html) NoCache
+> 3. [Compute](LD_09/compute.html) Cache
 ---
