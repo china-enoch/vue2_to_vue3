@@ -30,24 +30,21 @@
             }
         },
         watch: {
-            isHot: {
-                // 被监听者发生改变时
-                handler(newValue, oldValue) {
-                    console.log(oldValue + ' isHot 更改了 ' + newValue);
-                },
-                immediate: true, //初始化时让 handler 调用一次
-            },
-            'member.a': {
-                handler(newValue, oldValue) {
-                    console.log('已监听到 a 的变化');
-                }
-            },
+            // 'member.a': {
+            //     handler(newValue, oldValue) {
+            //         console.log('已监听到 a 的变化');
+            //     }
+            // },
             member:{
                 deep:true,//开启深度监听
                 handler(newValue, oldValue) {
                     console.log('已监听到 member 的变化');
                 }
-            }
+            },
+            //简写
+            'member.a'(){
+                console.log('已监听到 a 的变化');
+            },
         }
     });
 
