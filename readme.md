@@ -78,3 +78,12 @@ Nothing
 8. `left`
 9. `right`
 ---
+
+>[Course 8 : Compute attributes](LD_09/index.html)
+
+> **Summary**
+
+1. [Interpolation syntax](LD_09/index.html)
+2. [Methods](LD_09/methods.html) NoCache
+3. [Compute](LD_09/compute.html) Cache
+---

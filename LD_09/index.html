@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 引入 Vue.js -->
+    <script src="../Js/vue.js" type="text/javascript" charset="utf-8"></script>
+    <title>Vue2 Course 9</title>
+</head>
+<body>
+
+<!-- 准备一个容器 -->
+<div id="root">
+    <h1>计算属性</h1>
+    姓: <input type="text" v-model="firstName">
+    名: <input type="text" v-model="lastName">
+    <br> <br>
+    姓名：{{firstName}}-{{lastName}}
+</div>
+
+<script>
+    Vue.config.productionTip = false; //阻止非生成环境的提示
+
+    Vue.config.keyCodes.huiche = 13; //自定义键盘事件别名
+
+    <!-- 创建 Vue 实例 -->
+    const vue = new Vue({
+        data:{
+          firstName:'张',
+          lastName:'三',
+        },
+    });
+
+    vue.$mount('#root');
+</script>
+</body>
+</html>
